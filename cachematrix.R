@@ -43,6 +43,6 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$get()
         inv <- solve(data, ...)
-        x$setmean(inv)
+        x$setinv(inv)
         inv
 }
